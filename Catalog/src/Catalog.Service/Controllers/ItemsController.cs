@@ -6,8 +6,6 @@ using Catalog.Service.Dtos;
 using Catalog.Service.Entities;
 using Common;
 
-
-
 namespace Catalog.Service.Controllers;
 [ApiController]
 [Route("api/[controller]")]
