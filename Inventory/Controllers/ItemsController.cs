@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using Common;
-using Inventory.Service.Clients;
 using Inventory.Service.Dtos;
 using Inventory.Service.Dtos.Entities;
 
@@ -36,6 +35,7 @@ public class ItemsController : ControllerBase
             var catalogItem = catalogItemEntities.Single(catalogItem => catalogItem.Id == inventoryItem.CatalogItemId);
             return inventoryItem.AsDto(catalogItem.Name, catalogItem.Description);
         });
+        
         return Ok(inventoryItemDtos);
     }
 

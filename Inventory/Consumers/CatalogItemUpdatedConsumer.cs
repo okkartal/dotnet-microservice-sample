@@ -38,9 +38,5 @@ public class CatalogItemUpdatedConsumer: IConsumer<CatalogItemUpdated>
 
             await _repository.UpdateAsync(item);
         }
-
-      
-
-        
     }
 }
